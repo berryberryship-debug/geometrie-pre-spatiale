@@ -40,15 +40,19 @@ Dans quelles conditions l'interaction entre fluctuations stochastiques, asymétr
 5. **Résilience** — évaluation de la capacité de récupération, de la durée des perturbations et de la conservation de l'intégrité après sollicitation.
 6. **Structure relationnelle** — étude des propriétés géométriques et des transformations induites par l'asymétrie du couplage.
 
-## Distinctions conceptuelles
+## Distinctions conceptuelles et méthodologiques
 
 - **Résistance** : capacité à limiter la dégradation pendant la perturbation.
 - **Récupération** : capacité à retrouver un état fonctionnel après la perturbation.
 - **Résilience structurelle** : capacité à préserver ou reconstruire les relations constitutives du système malgré les transformations de ses états internes.
+- **Dose imposée vs Dose réalisée** : distinction stricte entre l'intensité de la perturbation injectée dans le modèle (soumise à des effets de plafonnement) et la perte effectivement subie par les compartiments selon leur état disponible.
+- **Viabilité sous stress vs Viabilité après récupération** : séparation des métriques évaluant la survie pendant le choc et celles évaluant la capacité de retour à l'équilibre post-choc.
 
 ## Statut des résultats et fil directeur
 
-Les simulations (versions V48.16, V48.17 et V48.18) fournissent des observations préliminaires concernant les interactions entre compensation, couplage et transfert de dommage.
+Les simulations (versions V48.16 à V48.37) fournissent des observations préliminaires concernant les interactions entre compensation, couplage et transfert de dommage.
+
+Les protocoles tardifs (V48.33 à V48.37) ont permis de corriger les biais d'appariement, d'assurer une équivalence de dose d'entrée stricte, et de mesurer la viabilité avec des intervalles de confiance (IC de Wilson). 
 
 La qualification de résonance stochastique, de transition topologique ou de résilience émergente demeure conditionnée à des critères opérationnels, des contrôles comparatifs et des tests de robustesse indépendants.
 
@@ -59,4 +63,9 @@ La prochaine étape du programme théorique consiste à formaliser les invariant
 
 ## Fichiers
 
-- `test_v48_18.py` : Script de simulation intégrant le contrôle des niveaux de bruit, les métriques de transfert de dommage, ainsi que les procédures statistiques (test de Wilcoxon apparié et correction de Holm pour comparaisons multiples).
+- `audit_v2.py` : Protocole d'évaluation multidimensionnelle des métriques topologiques et informationnelles.
+- `test_v48_22.py` : Moteur de mesure de la continuité relationnelle (préchauffage, bruit apparié).
+- `test_v48_25.py` : Test de plasticité relationnelle (mutation de la matrice W sous le stress).
+- `test_v48_28.py` : Audit contrôlé avec appariement strict par transformée inverse.
+- `test_v48_33.py` : Équivalence de dose et effet du calendrier temporel (chocs réguliers, groupés, aléatoires).
+- `test_v48_37_conclusion.py` : Protocole final traçant la surface de viabilité (matrice paramétrique de l'asymétrie, calcul strict de la dose réalisée, et double analyse stress/récupération avec IC de Wilson).
