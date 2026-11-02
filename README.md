@@ -32,7 +32,7 @@ Sans cette propriété, le couplage détruit ou crée de l'information, invalida
 
 ## L'Hypothèse Centrale
 
-> **La perte d'intégrité fonctionnelle n'implique pas nécessairement la perte de continuité structurelle.**
+> **Sans cette propriété (matrice colonne-stochastique), la conservation de la masse relationnelle n'est plus garantie. L'analyse des invariants de somme doit alors être reformulée.**
 > 
 > Un système peut conserver certaines relations organisatrices malgré une altération profonde de ses états et de ses fonctions. Ces relations invariantes constituent les conditions de possibilité d'une reconstruction.
 
