@@ -20,7 +20,7 @@ Pour \(W(\alpha) = \begin{pmatrix} 0.8-\alpha & 0.2-\alpha \\ 0.2+\alpha & 0.8+\
 *   Le déterminant reste constant : \(\det(W) = 0.6\)
 *   Les valeurs propres restent constantes : \(\lambda_1 = 1, \lambda_2 = 0.6\)
 
-**Théorème empirique (V48/V49) :** La conservation du spectre n'impose pas la conservation des trajectoires fonctionnelles. L'identité mathématique profonde (les valeurs propres) est préservée alors même que la structure directionnelle (les vecteurs propres) et les conséquences matérielles (les flux) changent.
+**Propriété algébrique démontrée : La famille de matrices W(\alpha) conserve un spectre constant. En revanche, la divergence des trajectoires fonctionnelles sous l'effet de la dynamique est une propriété du modèle qui doit être vérifiée par les simulations.**
 
 ## 2. La Distinction Dose / Perte Réalisée
 
