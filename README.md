@@ -1,18 +1,41 @@
-## Fil directeur et programme de recherche
+# Géométrie Pré-Spatiale : Continuité d'État, de Fonction et de Structure
 
-Le projet ne se réduit pas à la recherche d'un seuil critique, mais vise à formaliser la distinction entre trois formes de continuité :
-1. **Continuité d'état** : maintien des variables internes (résistance classique).
-2. **Continuité fonctionnelle** : maintien de l'intégrité (viabilité).
-3. **Continuité structurelle** : préservation de l'organisation relationnelle (invariants géométriques).
+## Le Fil Directeur du Programme
 
-**Hypothèse structurante :**
-> Un système peut perdre une partie de son intégrité fonctionnelle tout en conservant les invariants relationnels (conservation de la masse relationnelle, polarisation directionnelle) qui rendent possible sa reconstruction.
+Ce projet n'est pas une simple collection de simulations. Il explore une hypothèse fondamentale sur la nature des systèmes complexes : la manière dont une organisation maintient son identité face aux perturbations.
 
-### Feuille de route
+Pour cela, nous distinguons rigoureusement trois formes de continuité :
 
-- **V48 — Dynamique et redistribution** (Réalisé) : États, couplages, compensation, perturbations et transfert de dommage.
-- **V49 — Invariants relationnels** (À venir) : Mesure explicite des invariants de conservation et de polarisation. Étude du transfert directionnel \(\Delta x_{\mathrm{couplage}} = W x^{-} - x^{-}\) pour analyser la redistribution des déficits.
-- **V50 — Frontière et membrane de viabilité** : Cartographie des surfaces probabilistes \(V(D, \alpha, \tau)\), transitions de régime et robustesse statistique (IC de Wilson).
-- **V51 — Résilience structurelle** : Introduction de la plasticité de la matrice relationnelle \(W(t)\), reconstruction post-choc et mesure de la continuité organisationnelle.
+*   **La continuité d'état** : Ce qui demeure dans les variables internes (résistance classique).
+*   **La continuité fonctionnelle** : Ce que le système peut encore accomplir (viabilité).
+*   **La continuité structurelle** : Les relations qui persistent, même lorsque l'état et la fonction sont altérés.
 
-La membrane de viabilité (\(V = 0.5\)) est considérée comme un **instrument de mesure opérationnel** de la continuité fonctionnelle, tandis que la géométrie relationnelle (l'étude de \(W\)) demeure l'objet théorique plus général.
+## Architecture des Versions
+
+L'évolution du dépôt suit cette progression conceptuelle :
+
+| Version | Contribution au fil directeur |
+| :--- | :--- |
+| **V44** | **Invariants Topologiques** : Identification et discrimination d'invariants (Möbius, cycles) pour définir la continuité structurelle. |
+| **V48** | **Dynamique des États** : Couplages, redistribution et transfert de dommage sous perturbations. |
+| **V49** | **Conservation Relationnelle** : Polarisation directionnelle et conservation de la masse relationnelle (via des matrices colonne-stochastiques). |
+| **V50** | **Frontière de Viabilité** : Cartographie probabiliste de l'effondrement fonctionnel (Intervalles de Wilson). |
+| **V51** | **Plasticité et Reconstruction** : Mutations structurelles et capacité de l'organisation à se reconstruire. |
+
+## Le Verrou Mathématique de V49
+
+Pour que la géométrie relationnelle ait un sens physique, la conservation de la masse relationnelle doit être garantie. Si \(\mathbf{1}^\top x\) est la masse, alors la matrice de couplage \(W\) doit impérativement être **colonne-stochastique** :
+\[
+ \mathbf{1}^\top W = \mathbf{1}^\top 
+\]
+Sans cette propriété, le couplage détruit ou crée de l'information, invalidant l'analyse des invariants.
+
+## L'Hypothèse Centrale
+
+> **La perte d'intégrité fonctionnelle n'implique pas nécessairement la perte de continuité structurelle.**
+> 
+> Un système peut conserver certaines relations organisatrices malgré une altération profonde de ses états et de ses fonctions. Ces relations invariantes constituent les conditions de possibilité d'une reconstruction.
+
+## Conclusion
+
+La géométrie relationnelle (l'étude de ce qui persiste) devient ainsi l'objet théorique unificateur. Les états (V48) et la viabilité (V50) ne sont que des niveaux d'observation d'une structure plus profonde, dont V44 et V49 nous donnent les premiers invariants mathématiques.
