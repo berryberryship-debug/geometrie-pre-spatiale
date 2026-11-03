@@ -1,5 +1,5 @@
 V50 — Architecture MCC (6 fichiers)
-v50_1_noyau.py — noyau dynamique, héritage V49.6.1-H.
+v50_noyau.py — noyau dynamique, héritage V49.6.1-H.
 v50_2_mcc.py — collecteur circonstanciel et journal SHA-256.
 v50_2_1_adaptateur.py — calibration puis journalisation d'un run nominal.
 v50_3_memoire.py — persistance et activation temporelle des traces.
