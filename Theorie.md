@@ -50,3 +50,4 @@ La viabilité (le fait de rester au-dessus d'un seuil \(F_{\min} \geq 0.25\)) n'
 > **Un système peut subir une transformation profonde de ses états et de ses flux (perte de viabilité fonctionnelle) tout en conservant les invariants spectraux et structurels qui rendent possible sa reconstruction ou sa reconnaissance organisationnelle.**
 
 Le passage de la V49 à la V50 devra tester si cette conservation des invariants permet effectivement une reconstruction post-choc (V51), ou si la dégradation fonctionnelle détruit irrémédiablement la capacité de retour à l'équilibre.
+Mise à jour théorique : précision sur la distribution stationnaire et la fonction de viabilité F).
