@@ -22,6 +22,10 @@ Pour \(W(\alpha) = \begin{pmatrix} 0.8-\alpha & 0.2-\alpha \\ 0.2+\alpha & 0.8+\
 
 **Propriété algébrique démontrée : La famille de matrices W(\alpha) conserve un spectre constant. En revanche, la divergence des trajectoires fonctionnelles sous l'effet de la dynamique est une propriété du modèle qui doit être vérifiée par les simulations.**
 
+**Précision sur la distribution et la reconstruction (Revue par les pairs) :**
+Bien que le spectre (trace, déterminant, valeurs propres) soit strictement invariant, les vecteurs propres de \(W(\alpha)\) varient. Par conséquent, la distribution stationnaire \(\pi(\alpha)\) varie linéairement avec l'orientation : \(\pi = (0.5 - 2.5\alpha ; 0.5 + 2.5\alpha)\) sur le domaine \(\alpha \in [-0.2 ; 0.2]\). 
+*Conséquence :* L'invariant spectral garantit la *vitesse de relaxation* (la loi physique), mais **ne détermine pas la direction de l'état** (vers où le système évolue). La capacité de reconstruction post-choc dépend donc de l'orientation \(\alpha\) (l'information de l'état), et non uniquement du spectre.
+
 ## 2. La Distinction Dose / Perte Réalisée
 
 Dans un système soumis à un stress non linéaire (avec plafonnement), il est mathématiquement erroné de supposer qu'une "dose imposée" équivaut à une "dose subie".
@@ -36,7 +40,7 @@ L'équivalence stricte des expériences (ex: stress chronique vs stress aigu) n'
 La viabilité (le fait de rester au-dessus d'un seuil \(F_{\min} \geq 0.25\)) n'est pas la résilience structurelle. Le programme distingue trois formes de continuité :
 
 1.  **Continuité d'État** (Résistance) : Les variables internes (\(x_1, x_2\)) demeurent relativement stables.
-2.  **Continuité Fonctionnelle** (Viabilité) : Le système maintient son intégrité globale (ex: le produit \(x_1 x_2\) ou la survie au stress).
+2.  **Continuité Fonctionnelle** (Viabilité) : Le système maintient son intégrité globale. La fonction de viabilité est définie comme le produit des états : \(F(x) = x_1 x_2\) (ou une somme pondérée pour N états).
 3.  **Continuité Relationnelle** (Invariant) : L'organisation (ex: le spectre de \(W\), la conservation de la masse) demeure reconnaissable malgré la déformation des états.
 
 ## 4. Hypothèse Fondamentale du Programme
